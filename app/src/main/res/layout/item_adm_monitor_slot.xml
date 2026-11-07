@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMonitorPill"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/bg_glass_card"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="6dp">
+
+    <TextView
+        android:id="@+id/tvMonitorSlotNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SJT-C01"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMonitorSlotType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAR"
+        android:textColor="#64748B"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tvMonitorSlotState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="AVAILABLE"
+        android:textColor="#E8B86D"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_glass_card"
+    android:orientation="vertical"
+    android:padding="22dp">
+
+    <!-- Header Badge -->
+    <TextView
+        android:id="@+id/tvPaymentBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_badge_active"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:text="BOOKING TARIFF SUMMARY"
+        android:textColor="#E8B86D"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Confirm Reservation &amp; Tariff"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Review your parking slot allocation and payment breakdown"
+        android:textColor="#94A3B8"
+        android:textSize="11sp" />
+
+    <!-- Details Card Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_glass_input"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tvSummaryAreaSlot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zone: SJT PARKING  |  Slot: SJT-C01"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSummaryUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Account: alex@vit.ac.in"
+            android:textColor="#CBD5E1"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:background="#25E8B86D" />
+
+        <TextView
+            android:id="@+id/tvSummaryTariffTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉 VIT Campus Member Waiver Applied"
+            android:textColor="#E8B86D"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSummaryTariffDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="100% Free Campus Parking Pass for @vit.ac.in users"
+            android:textColor="#94A3B8"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvSummaryTotalPayable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total Amount Payable: INR 0.00"
+            android:textColor="#E8B86D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Payment Mode Options (Hidden for VIT Free Users, Visible for Non-VIT) -->
+    <LinearLayout
+        android:id="@+id/layoutPaymentMethods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Mode:"
+            android:textColor="#CBD5E1"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/rgPaymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbPayUpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="📱 Instant UPI (GPay / PhonePe)"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rbPayCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💳 Credit / Debit Card"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rbPayCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💵 Cash / Fastag at Gate"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnCancelBookingPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_nav_pill_inactive"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="Cancel"
+            android:textColor="#CBD5E1"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConfirmBookingPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_btn_cyber_gradient"
+            android:paddingHorizontal="16dp"
+            android:text="Confirm Booking →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

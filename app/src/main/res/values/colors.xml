@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Brand & Background Colors - Sunset Glow & Golden Amber Theme -->
+    <color name="bg_main">#0A0D20</color>          <!-- Deep midnight indigo base -->
+    <color name="card_surface">#141838</color>     <!-- Translucent dark glass surface -->
+    <color name="card_stroke">#40E8B86D</color>    <!-- Golden amber glass border stroke -->
+
+    <!-- Sunset Glow Primary & Accent Accents -->
+    <color name="primary_amber">#E8B86D</color>   <!-- Golden Amber accent -->
+    <color name="primary_peach">#F2A06A</color>   <!-- Warm Peach Bloom accent -->
+    <color name="primary_coral">#F16E68</color>   <!-- Vibrant Coral Rose accent -->
+    <color name="primary_blue">#E8B86D</color>    <!-- Mapped interactive primary -->
+    <color name="accent_cyan">#F16E68</color>     <!-- Mapped highlights & icons -->
+
+    <!-- Text Colors -->
+    <color name="text_primary">#F8FAFC</color>     <!-- High emphasis white text -->
+    <color name="text_secondary">#CBD5E1</color>   <!-- Muted light text / labels -->
+    <color name="text_hint">#64748B</color>        <!-- Input placeholders / hints -->
+
+    <!-- Parking Status Indicators -->
+    <color name="status_available">#22C55E</color> <!-- Green: Free slot -->
+    <color name="status_occupied">#EF4444</color>  <!-- Red: Occupied slot -->
+    <color name="status_reserved">#F59E0B</color>  <!-- Amber: Reserved slot -->
+    <color name="status_blocked">#6B7280</color>   <!-- Gray: Under maintenance -->
+
+    <!-- System Base Colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBayNode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/bg_glass_circle_slot"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="6dp"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/tvBayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SJT-C01"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBayVehicleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="CAR"
+        android:textColor="#64748B"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tvBayStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="AVAILABLE"
+        android:textColor="#E8B86D"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+</LinearLayout>
